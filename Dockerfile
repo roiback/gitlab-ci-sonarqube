@@ -2,7 +2,7 @@ FROM openjdk:8-jre-slim
 
 # Install nodejs
 RUN apt-get update -q && \
-    apt-get install -y -q curl gnupg && \
+    apt-get install -y -q curl gnupg git && \
     curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt-get install -y nodejs
 
