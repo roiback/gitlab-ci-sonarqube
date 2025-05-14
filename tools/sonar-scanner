@@ -3,7 +3,7 @@
 # Runs a code scan, sends the results to Sonarqube, and checks if the quality gate passed
 
 echo "Publishing scan results"
-$TOOLS_PATH/sonar-scanner-3.2.0.1227-linux/bin/sonar-scanner \
+$TOOLS_PATH/sonar-scanner-7.0.2.4839-linux-x64/bin/sonar-scanner \
     -Dsonar.host.url=$SONAR_URL \
     -Dsonar.login=$SONAR_LOGIN \
     -Dsonar.gitlab.project_id=$CI_PROJECT_PATH \
